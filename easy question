@@ -1,0 +1,332 @@
+from pickle import TRUE
+
+# Easy question i use chatgpt to give me question that i solved to partice on things that i have learned 
+
+
+
+
+# Python - Variables: Write a Python program to declare a variable, assign a value to it, and print the value.
+
+var = 10
+print(var)
+
+# Python - Data Types: Write a Python program that declares variables of different data types (integer, float, string, and boolean) and prints their types.
+
+name = str("hello")
+age = int(23)
+weight= float(50.6)
+married=bool(False)
+
+print(name)
+print(age)
+print(weight)
+print(married)
+
+
+# Python - Type Casting: Write a Python program to convert a string "123" into an integer, and then add 10 to it and print the result.
+
+var=123
+print(int(var)+10)
+
+
+# Python - Unicode System: Write a Python program to print the Unicode value of the character 'A'.
+
+var ="\u0041"
+print(var)
+
+
+
+
+# Python - Arithmetic Operators: Write a Python program to perform and print the results of addition, subtraction, multiplication, and division of two numbers.
+
+num1=10
+num2=20
+res=0
+
+res=num1+num2
+print("num1: {} num2: {} num1+num2: {}".format(num1,num2,res))
+
+res=num1-num2
+print("num1: {} num2: {} num1-num2: {}".format(num1,num2,res))
+
+res=num1*num2
+print("num1: {} num2: {} num1*num2: {}".format(num1,num2,res))
+
+res=num1/num2
+print("num1: {} num2: {} num1/num2: {}".format(num1,num2,res))
+
+res=num1//num2
+print("num1: {} num2: {} num1//num2: {}".format(num1,num2,res))
+
+
+
+# Python - Comparison Operators: Write a Python program to compare two numbers using comparison operators and print the results.
+
+a=10
+b=50
+
+print(a>b)
+a=50
+print(a==b)
+
+# Python - Assignment Operators: Write a Python program to demonstrate the use of various assignment operators (+=, -=, *=, /=).
+a=10
+a+=10
+print(a)
+a-=10
+print(a)
+a*=2
+print(a)
+a/=10
+print(a)
+
+# Python - Logical Operators: Write a Python program to demonstrate the use of logical operators (and, or, not) in conditional statements.
+
+a=10
+b=4
+c=10
+
+print(a>b and c>=a)
+print(a>b or c>a)
+print(not a>b)
+
+# Python - Bitwise Operators: Write a Python program to demonstrate the use of bitwise operators (AND, OR, XOR).
+
+a=10
+b=10
+c=2
+
+print(a&b )
+print(a|c )
+print(a^b)
+
+
+# Python - Membership Operators: Write a Python program to check if an element exists in a list using the 'in' and 'not in' operators.
+
+lis=['mustafa',30,'age','salar']
+
+print(30 in lis)
+print('age' not in lis)
+
+
+
+# Python - Identity Operators: Write a Python program to check if two variables refer to the same object using the 'is' and 'is not' operators.
+
+
+a=10
+b=20
+c=10
+
+print(c is a)
+print(c is not b)
+
+
+
+Python - User Input: Write a Python program to take a user's name as input and print a greeting message.
+
+name= str(input('Enter your message here'))
+
+print(name)
+
+
+# Python - Numbers: Write a Python program to print the absolute value of a number.
+
+def ab(num):
+  if(num<0):
+    num=-num
+    return num
+  return num
+ 
+
+num=int(input("enter a number"))
+
+print('abs',ab(num))
+
+
+# Python - Booleans: Write a Python program that demonstrates the use of boolean values in conditional statements.
+
+dict={'name':'mustafa','matiral_status':TRUE}
+
+if dict.get('matiral_status'):
+  print("married")
+else:
+  print("not married")
+
+  
+
+
+# Python - Control Flow: Write a Python program to demonstrate the use of if-elif-else statements.
+
+
+age = int(input("ENter your age : "))
+
+if age<=10:
+  print("your are child")
+elif age<18:
+  print("your are teenage")
+else:
+  print("you are adult")
+
+
+
+# Python - If Statement: Write a Python program that checks if a number is positive and prints a message.
+
+num = int(input("ENter a number : "))
+
+if num>0:
+  print("postive number")
+else:
+  print("negtive number")
+
+
+
+# Python - If else: Write a Python program that checks if a number is even or odd and prints a message.
+
+num = int(input("ENter a number : "))
+
+for i in range(num):
+  if i%2==0:
+    print("odd number",i)
+  else:
+    print("Even number",i)
+
+
+
+# Python - Nested If: Write a Python program that checks if a number is positive, negative, or zero using nested if statements.
+
+num = int(input("ENter a number : "))
+
+if num<0:
+  print('nagtive number')
+  if num==0:
+    print('zero number')
+    if num>0:
+      print("postive number")
+
+
+
+# Python - Match-Case Statement: Write a Python program that uses the match-case statement to print different messages based on a variable's value.
+
+def access(user):
+  match user:
+    case "admin" | "user": return "full access"
+    case "guest": return "limited access"
+    case _ : return "no access"
+
+access("admin")
+
+
+
+# Python - Loops: Write a Python program that uses a for loop to print numbers from 1 to 10.
+
+
+for i in range(10):
+  print(i)
+
+
+# Python - for Loops: Write a Python program that uses a for loop to print each character of a string.
+
+name="mustafa khan"
+
+for i in name:
+  print(i,end=' ')
+
+
+# Python - While Loops: Write a Python program that uses a while loop to print numbers from 1 to 5.
+
+count=0
+while(count<5):
+  print(count+1)
+  count +=1
+
+
+
+# Python - break Statement: Write a Python program that uses a for loop to print numbers from 1 to 5 but breaks the loop when it reaches 3.
+
+for i in range(5):
+  if i==3:
+    break
+  print(i+1)
+
+
+
+# Python - continue Statement: Write a Python program that uses a for loop to print numbers from 1 to 5 but skips the number 3.
+
+for i in range(5):
+  if i==3:
+    continue
+  print(i+1)
+
+# Python - pass Statement: Write a Python program that includes a function with a pass statement.
+
+def add():
+  pass
+
+# Python - Nested Loops: Write a Python program that uses nested loops to print a 3x3 matrix of numbers.
+
+for i in range(3):
+  print()
+  for j in range(3):
+    print(j+1,end='')
+
+# Python Functions & Modules: Write a Python program to define and call a simple function that prints a message.
+
+def call():
+  print("calling")
+
+
+# Python - Functions: Write a Python program to define a function that takes two numbers as arguments and returns their sum.
+
+def sum(*args)->int:
+  sum=0
+  for i in args:
+    sum+=i
+  return sum
+
+
+sum(1,2,4)
+
+
+# Python - Default Arguments: Write a Python program to define a function with a default argument and call it with and without the argument.
+
+def age(default =18):
+  return "your age is ",default
+
+print(age())
+
+age(23)
+
+# Python - Keyword Arguments: Write a Python program to define a function that takes keyword arguments and prints them.
+
+def user(**kwargs):
+  for k,v in kwargs.items():
+    print("{} {}".format(k,v))
+
+
+user(name='mustafa',age='23',name1='salar',age1='23')
+
+# Python - Arbitrary Arguments: Write a Python program to define a function that takes an arbitrary number of arguments and prints them.
+
+def sum(*args)->int:
+  sum=0
+  for i in args:
+    sum+=i
+  return sum
+
+
+sum(1,2,4)
+
+# Python - Function Annotations: Write a Python program to define a function with type annotations and print the annotations.
+
+def add(a: int, b: int)->int:
+  return a+b
+
+print(add.__annotations__) 
+
+# Python - Built-in Functions: Write a Python program to use the len() function to find the length of a string.
+
+name="mustafa khan"
+
+print(len(name))
+
+
