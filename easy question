@@ -330,3 +330,80 @@ name="mustafa khan"
 print(len(name))
 
 
+# Medium
+
+# Python - Control Flow: Write a Python program that  print a table up to 10x10.
+
+def table(tabl: int,num: int,count=1 ):
+
+  if table==0:
+    return 0
+  
+  if count>num:
+    return 
+  print("{} * {} =".format(tabl,num),count*num)
+  table(tabl,num,count+1)
+
+
+table(5,10)
+
+# Python - Decision Making: Write a Python program that checks if a given year is a leap year.
+
+def leap_year(year)->str:
+  if (year%4==0 and year%100!=0)or year%400==0:
+    return "leap year"
+  else:
+    return "not leap year"
+
+
+# Python - for-else Loops: Write a Python program that uses a for-else loop to check if a number is prime.
+
+num=0
+def prime(num: int):
+  
+  if num == 2: 
+    return"prime"
+    
+  if num %2!=0  :
+    print("prime number")
+  else:
+    return "not prime" 
+
+prime(num)
+
+# Python - Nested Loops: Write a Python program that uses nested loops to print a pattern of asterisks in the shape of a right triangle.
+
+i=0
+while i<5:
+  i=i+1
+  j=0
+  while j<i:
+    print("*",end='')
+    j=j+1
+  print()
+
+
+# Python - Functions: Write a Python program to define a function that takes a list of numbers as an argument and returns the maximum number.
+
+
+def max(my_list:list):
+  max=0
+  for i in my_list:
+    if i>max:
+      max=i
+  return max
+
+lis=[1,2,3,4,5]
+max(lis)
+
+# Python - Default Arguments: Write a Python program to define a function with a default argument for the exponent and call it to calculate the power of a number.
+
+
+def pow(num:int)->int:
+  if num==0:
+    return 1
+  return num*num
+
+pow(0)
+
+
